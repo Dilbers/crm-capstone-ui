@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CRMWindow</class>
+ <widget class="QMainWindow" name="CRMWindow">
+  <property name="windowTitle"><string>CRM Interface Prototype</string></property>
+  <property name="minimumSize"><size><width>820</width><height>580</height></size></property>
+  <property name="geometry"><rect><x>0</x><y>0</y><width>1080</width><height>720</height></rect></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <property name="leftMargin"><number>28</number></property>
+    <property name="topMargin"><number>24</number></property>
+    <property name="rightMargin"><number>28</number></property>
+    <property name="bottomMargin"><number>24</number></property>
+    <item>
+     <widget class="QStackedWidget" name="pageStack">
+      <property name="currentIndex"><number>0</number></property>
+      <widget class="QWidget" name="loginPage">
+       <layout class="QHBoxLayout" name="loginLayout">
+        <property name="leftMargin"><number>36</number></property><property name="topMargin"><number>36</number></property><property name="rightMargin"><number>36</number></property><property name="bottomMargin"><number>36</number></property>
+        <property name="spacing"><number>28</number></property>
+        <item>
+         <widget class="QFrame" name="loginHeroPanel">
+          <property name="minimumSize"><size><width>300</width><height>0</height></size></property>
+          <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+          <layout class="QVBoxLayout" name="loginHeroLayout">
+           <property name="leftMargin"><number>30</number></property><property name="topMargin"><number>34</number></property><property name="rightMargin"><number>30</number></property><property name="bottomMargin"><number>30</number></property>
+           <item><widget class="QLabel" name="loginHeroBrand"><property name="text"><string>CRM  /  WORKSPACE</string></property><property name="objectName"><string>loginHeroBrand</string></property></widget></item>
+           <item><spacer name="loginHeroTopSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>70</height></size></property></spacer></item>
+           <item><widget class="QLabel" name="loginHeroTitle"><property name="text"><string>Your CRM,&#10;all in one place.</string></property><property name="wordWrap"><bool>true</bool></property><property name="objectName"><string>loginHeroTitle</string></property></widget></item>
+           <item><widget class="QLabel" name="loginHeroBody"><property name="text"><string>Manage applications, mentor conversations and interviews from one workspace.</string></property><property name="wordWrap"><bool>true</bool></property><property name="objectName"><string>loginHeroBody</string></property></widget></item>
+           <item><spacer name="loginHeroBottomSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>70</height></size></property></spacer></item>
+           <item><widget class="QLabel" name="loginHeroFooter"><property name="text"><string>CRM INTERFACE  •  UI DEMO</string></property><property name="objectName"><string>loginHeroFooter</string></property></widget></item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="loginCard">
+          <property name="minimumSize"><size><width>340</width><height>0</height></size></property>
+          <property name="maximumSize"><size><width>480</width><height>16777215</height></size></property>
+          <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+          <layout class="QVBoxLayout" name="loginCardLayout">
+           <property name="leftMargin"><number>34</number></property><property name="topMargin"><number>34</number></property><property name="rightMargin"><number>34</number></property><property name="bottomMargin"><number>30</number></property>
+           <property name="spacing"><number>13</number></property>
+           <item><spacer name="loginCardTopSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>22</height></size></property></spacer></item>
+           <item><widget class="QLabel" name="loginTitle"><property name="text"><string>Welcome back</string></property><property name="objectName"><string>pageTitle</string></property></widget></item>
+           <item><widget class="QLabel" name="loginSubtitle"><property name="text"><string>Sign in to continue to your workspace.</string></property><property name="objectName"><string>pageSubtitle</string></property></widget></item>
+           <item><spacer name="loginTitleSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>12</height></size></property></spacer></item>
+           <item><widget class="QLabel" name="usernameLabel"><property name="text"><string>Username</string></property></widget></item>
+           <item><widget class="QLineEdit" name="usernameInput"><property name="minimumSize"><size><width>0</width><height>44</height></size></property><property name="placeholderText"><string>Enter your username</string></property></widget></item>
+           <item><widget class="QLabel" name="passwordLabel"><property name="text"><string>Password</string></property></widget></item>
+           <item><widget class="QLineEdit" name="passwordInput"><property name="minimumSize"><size><width>0</width><height>44</height></size></property><property name="echoMode"><enum>QLineEdit::Password</enum></property><property name="placeholderText"><string>Enter your password</string></property></widget></item>
+           <item><widget class="QLabel" name="loginHelper"><property name="text"><string>Demo only: credentials are not checked.</string></property><property name="objectName"><string>helperText</string></property></widget></item>
+           <item><spacer name="loginFormSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>12</height></size></property></spacer></item>
+           <item><widget class="QPushButton" name="loginButton"><property name="minimumSize"><size><width>0</width><height>46</height></size></property><property name="text"><string>Log in</string></property><property name="objectName"><string>primaryButton</string></property></widget></item>
+           <item><widget class="QPushButton" name="loginCloseButton"><property name="text"><string>Close</string></property><property name="objectName"><string>closeButton</string></property></widget></item>
+           <item><spacer name="loginCardBottomSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>22</height></size></property></spacer></item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="preferencesPage">
+       <layout class="QVBoxLayout" name="preferencesLayout">
+        <item><widget class="QFrame" name="preferencesTopBar"><property name="objectName"><string>topBar</string></property><layout class="QHBoxLayout" name="preferencesTopBarLayout"><item><widget class="QLabel" name="preferencesBrand"><property name="text"><string>CRM  /  INTERFACE PROTOTYPE</string></property><property name="objectName"><string>brand</string></property></widget></item><item><spacer name="preferencesTopSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item><item><widget class="QLabel" name="preferencesDemoLabel"><property name="text"><string>UI DEMO  •  NO BACKEND</string></property><property name="objectName"><string>helperText</string></property></widget></item></layout></widget></item>
+        <item><widget class="QLabel" name="preferencesTitle"><property name="text"><string>Preferences</string></property><property name="objectName"><string>pageTitle</string></property></widget></item>
+        <item><widget class="QLabel" name="preferencesSubtitle"><property name="text"><string>Choose a section to open in the CRM workspace.</string></property><property name="objectName"><string>pageSubtitle</string></property></widget></item>
+        <item><widget class="QFrame" name="preferencesCard"><property name="objectName"><string>contentCard</string></property><layout class="QVBoxLayout" name="preferencesCardLayout">
+         <item><widget class="QPushButton" name="applicationsNavButton"><property name="text"><string>Applications</string></property><property name="objectName"><string>primaryButton</string></property></widget></item>
+         <item><widget class="QPushButton" name="mentorNavButton"><property name="text"><string>Mentor Interview</string></property><property name="objectName"><string>primaryButton</string></property></widget></item>
+         <item><widget class="QPushButton" name="interviewsNavButton"><property name="text"><string>Interviews</string></property><property name="objectName"><string>primaryButton</string></property></widget></item>
+         <item><widget class="QPushButton" name="preferencesCloseButton"><property name="text"><string>Close</string></property><property name="objectName"><string>closeButton</string></property></widget></item>
+        </layout></widget></item><item><spacer name="preferencesBottomSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property></spacer></item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="adminPreferencesPage">
+       <layout class="QVBoxLayout" name="adminPreferencesLayout">
+        <item><widget class="QFrame" name="adminPreferencesTopBar"><property name="objectName"><string>topBar</string></property><layout class="QHBoxLayout" name="adminPreferencesTopBarLayout"><item><widget class="QLabel" name="adminPreferencesBrand"><property name="text"><string>CRM  /  INTERFACE PROTOTYPE</string></property><property name="objectName"><string>brand</string></property></widget></item><item><spacer name="adminPreferencesTopSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item><item><widget class="QLabel" name="adminPreferencesDemoLabel"><property name="text"><string>UI DEMO  •  NO BACKEND</string></property><property name="objectName"><string>helperText</string></property></widget></item></layout></widget></item>
+        <item><widget class="QLabel" name="adminPreferencesTitle"><property name="text"><string>Preferences — Admin</string></property><property name="objectName"><string>pageTitle</string></property></widget></item>
+        <item><widget class="QLabel" name="adminPreferencesSubtitle"><property name="text"><string>Administrator workspace and CRM sections.</string></property><property name="objectName"><string>pageSubtitle</string></property></widget></item>
+        <item><widget class="QFrame" name="adminPreferencesCard"><property name="objectName"><string>contentCard</string></property><layout class="QVBoxLayout" name="adminPreferencesCardLayout">
+         <item><widget class="QPushButton" name="adminApplicationsNavButton"><property name="text"><string>Applications</string></property><property name="objectName"><string>primaryButton</string></property></widget></item>
+         <item><widget class="QPushButton" name="adminMentorNavButton"><property name="text"><string>Mentor Interview</string></property><property name="objectName"><string>primaryButton</string></property></widget></item>
+         <item><widget class="QPushButton" name="adminInterviewsNavButton"><property name="text"><string>Interviews</string></property><property name="objectName"><string>primaryButton</string></property></widget></item>
+         <item><widget class="QPushButton" name="adminMenuNavButton"><property name="text"><string>Admin Menu</string></property><property name="objectName"><string>primaryButton</string></property></widget></item>
+         <item><widget class="QPushButton" name="adminPreferencesCloseButton"><property name="text"><string>Close</string></property><property name="objectName"><string>closeButton</string></property></widget></item>
+        </layout></widget></item><item><spacer name="adminPreferencesBottomSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property></spacer></item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="applicationsPage">
+       <layout class="QVBoxLayout" name="applicationsLayout">
+        <item><widget class="QFrame" name="applicationsTopBar"><property name="objectName"><string>topBar</string></property><layout class="QHBoxLayout" name="applicationsTopBarLayout"><item><widget class="QLabel" name="applicationsBrand"><property name="text"><string>CRM  /  INTERFACE PROTOTYPE</string></property><property name="objectName"><string>brand</string></property></widget></item><item><spacer name="applicationsTopSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item><item><widget class="QLabel" name="applicationsDemoLabel"><property name="text"><string>UI DEMO  •  NO BACKEND</string></property><property name="objectName"><string>helperText</string></property></widget></item></layout></widget></item>
+        <item><widget class="QLabel" name="applicationsTitle"><property name="text"><string>Applications</string></property><property name="objectName"><string>pageTitle</string></property></widget></item>
+        <item><widget class="QLabel" name="applicationsSubtitle"><property name="text"><string>Review and filter course applications. Data integration comes later.</string></property><property name="objectName"><string>pageSubtitle</string></property></widget></item>
+        <item><widget class="QFrame" name="applicationsCard"><property name="objectName"><string>contentCard</string></property><layout class="QVBoxLayout" name="applicationsCardLayout">
+         <item><layout class="QHBoxLayout" name="applicationsSearchLayout"><item><widget class="QLineEdit" name="applicationsSearchInput"><property name="placeholderText"><string>Search applications</string></property></widget></item><item><widget class="QPushButton" name="applicationsSearchButton"><property name="text"><string>Search</string></property><property name="objectName"><string>primaryButton</string></property></widget></item></layout></item>
+         <item><layout class="QHBoxLayout" name="applicationsFilterLayout">
+          <item><widget class="QPushButton" name="allApplicationsFilter"><property name="text"><string>All Applications</string></property></widget></item>
+          <item><widget class="QPushButton" name="mentorDefinedFilter"><property name="text"><string>Mentor Meeting Defined</string></property></widget></item>
+          <item><widget class="QPushButton" name="mentorNotDefinedFilter"><property name="text"><string>Mentor Meeting Not Defined</string></property></widget></item>
+         </layout></item>
+         <item><widget class="QTableWidget" name="applicationsTable"><property name="columnCount"><number>7</number></property><property name="rowCount"><number>0</number></property><column><property name="text"><string>Name</string></property></column><column><property name="text"><string>Email</string></property></column><column><property name="text"><string>Phone</string></property></column><column><property name="text"><string>Application Date</string></property></column><column><property name="text"><string>Course</string></property></column><column><property name="text"><string>Mentor Meeting</string></property></column><column><property name="text"><string>Status</string></property></column></widget></item>
+        </layout></widget></item>
+        <item><widget class="QPushButton" name="applicationsReturnButton"><property name="text"><string>Return to Preferences Screen</string></property></widget></item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="mentorPage">
+       <layout class="QVBoxLayout" name="mentorLayout">
+        <item><widget class="QFrame" name="mentorTopBar"><property name="objectName"><string>topBar</string></property><layout class="QHBoxLayout" name="mentorTopBarLayout"><item><widget class="QLabel" name="mentorBrand"><property name="text"><string>CRM  /  INTERFACE PROTOTYPE</string></property><property name="objectName"><string>brand</string></property></widget></item><item><spacer name="mentorTopSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item><item><widget class="QLabel" name="mentorDemoLabel"><property name="text"><string>UI DEMO  •  NO BACKEND</string></property><property name="objectName"><string>helperText</string></property></widget></item></layout></widget></item>
+        <item><widget class="QLabel" name="mentorTitle"><property name="text"><string>Mentor Interview</string></property><property name="objectName"><string>pageTitle</string></property></widget></item>
+        <item><widget class="QLabel" name="mentorSubtitle"><property name="text"><string>Browse mentor conversations and choose a category.</string></property><property name="objectName"><string>pageSubtitle</string></property></widget></item>
+        <item><widget class="QFrame" name="mentorCard"><property name="objectName"><string>contentCard</string></property><layout class="QVBoxLayout" name="mentorCardLayout">
+         <item><layout class="QHBoxLayout" name="mentorSearchLayout"><item><widget class="QLineEdit" name="mentorSearchInput"><property name="placeholderText"><string>Search conversations</string></property></widget></item><item><widget class="QPushButton" name="mentorSearchButton"><property name="text"><string>Search</string></property><property name="objectName"><string>primaryButton</string></property></widget></item></layout></item>
+         <item><layout class="QHBoxLayout" name="mentorCategoryLayout"><item><widget class="QPushButton" name="allConversationsButton"><property name="text"><string>All Conversations</string></property><property name="objectName"><string>primaryButton</string></property></widget></item><item><widget class="QComboBox" name="conversationCategory"><item><property name="text"><string>All categories</string></property></item><item><property name="text"><string>Initial contact</string></property></item><item><property name="text"><string>Mentor meeting</string></property></item><item><property name="text"><string>Follow-up</string></property></item></widget></item></layout></item>
+         <item><widget class="QLabel" name="mentorHelper"><property name="text"><string>Conversation results will appear here in a later project stage.</string></property><property name="objectName"><string>helperText</string></property></widget></item>
+         <item><spacer name="mentorCardSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>80</height></size></property></spacer></item>
+        </layout></widget></item><item><widget class="QPushButton" name="mentorReturnButton"><property name="text"><string>Return to Preferences Screen</string></property></widget></item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="interviewsPage">
+       <layout class="QVBoxLayout" name="interviewsLayout">
+        <item><widget class="QFrame" name="interviewsTopBar"><property name="objectName"><string>topBar</string></property><layout class="QHBoxLayout" name="interviewsTopBarLayout"><item><widget class="QLabel" name="interviewsBrand"><property name="text"><string>CRM  /  INTERFACE PROTOTYPE</string></property><property name="objectName"><string>brand</string></property></widget></item><item><spacer name="interviewsTopSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item><item><widget class="QLabel" name="interviewsDemoLabel"><property name="text"><string>UI DEMO  •  NO BACKEND</string></property><property name="objectName"><string>helperText</string></property></widget></item></layout></widget></item>
+        <item><widget class="QLabel" name="interviewsTitle"><property name="text"><string>Interviews</string></property><property name="objectName"><string>pageTitle</string></property></widget></item>
+        <item><widget class="QLabel" name="interviewsSubtitle"><property name="text"><string>Review project delivery status. Filtering will be added later.</string></property><property name="objectName"><string>pageSubtitle</string></property></widget></item>
+        <item><widget class="QFrame" name="interviewsCard"><property name="objectName"><string>contentCard</string></property><layout class="QVBoxLayout" name="interviewsCardLayout">
+         <item><layout class="QHBoxLayout" name="interviewsSearchLayout"><item><widget class="QLineEdit" name="interviewsSearchInput"><property name="placeholderText"><string>Search interviews</string></property></widget></item><item><widget class="QPushButton" name="interviewsSearchButton"><property name="text"><string>Search</string></property><property name="objectName"><string>primaryButton</string></property></widget></item></layout></item>
+         <item><layout class="QHBoxLayout" name="interviewsFilterLayout"><item><widget class="QPushButton" name="projectSentButton"><property name="text"><string>Project Sent</string></property><property name="objectName"><string>primaryButton</string></property></widget></item><item><widget class="QPushButton" name="projectReceivedButton"><property name="text"><string>Project Received</string></property></widget></item><item><spacer name="interviewsFilterSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item></layout></item>
+         <item><widget class="QLabel" name="interviewsHelper"><property name="text"><string>Interview records will appear here in a later project stage.</string></property><property name="objectName"><string>helperText</string></property></widget></item>
+         <item><spacer name="interviewsCardSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>80</height></size></property></spacer></item>
+        </layout></widget></item><item><widget class="QPushButton" name="interviewsReturnButton"><property name="text"><string>Return to Preferences Screen</string></property></widget></item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="adminMenuPage">
+       <layout class="QVBoxLayout" name="adminMenuLayout">
+        <item><widget class="QFrame" name="adminTopBar"><property name="objectName"><string>topBar</string></property><layout class="QHBoxLayout" name="adminTopBarLayout"><item><widget class="QLabel" name="adminBrand"><property name="text"><string>CRM  /  INTERFACE PROTOTYPE</string></property><property name="objectName"><string>brand</string></property></widget></item><item><spacer name="adminTopSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item><item><widget class="QLabel" name="adminDemoLabel"><property name="text"><string>UI DEMO  •  NO BACKEND</string></property><property name="objectName"><string>helperText</string></property></widget></item></layout></widget></item>
+        <item><widget class="QLabel" name="adminTitle"><property name="text"><string>Admin Menu</string></property><property name="objectName"><string>pageTitle</string></property></widget></item>
+        <item><widget class="QLabel" name="adminSubtitle"><property name="text"><string>Calendar event records and participant mail tools.</string></property><property name="objectName"><string>pageSubtitle</string></property></widget></item>
+        <item><widget class="QFrame" name="adminCard"><property name="objectName"><string>contentCard</string></property><layout class="QVBoxLayout" name="adminCardLayout">
+         <item><layout class="QHBoxLayout" name="adminActionsLayout"><item><widget class="QPushButton" name="eventRecordButton"><property name="text"><string>Event Record</string></property><property name="objectName"><string>primaryButton</string></property></widget></item><item><widget class="QPushButton" name="mailButton"><property name="text"><string>Mail</string></property></widget></item><item><spacer name="adminActionsSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item></layout></item>
+         <item><widget class="QTableWidget" name="eventsTable"><property name="columnCount"><number>5</number></property><property name="rowCount"><number>0</number></property><column><property name="text"><string>Event</string></property></column><column><property name="text"><string>Date</string></property></column><column><property name="text"><string>Time</string></property></column><column><property name="text"><string>Participants</string></property></column><column><property name="text"><string>Status</string></property></column></widget></item>
+        </layout></widget></item>
+        <item><layout class="QHBoxLayout" name="adminBottomLayout"><item><widget class="QPushButton" name="adminReturnButton"><property name="text"><string>Preferences — Return to Admin Screen</string></property></widget></item><item><spacer name="adminBottomSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item><item><widget class="QPushButton" name="adminExitButton"><property name="text"><string>Exit</string></property><property name="objectName"><string>closeButton</string></property></widget></item></layout></item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
