@@ -218,7 +218,9 @@ class CRMPrototype:
         for text, destination in destinations:
             layout.addWidget(
                 self._button(
-                    text, lambda page=destination: self._show(page), primary=True
+                    text,
+                    lambda _checked=False, page=destination: self._show(page),
+                    primary=True,
                 )
             )
         if admin:
@@ -266,7 +268,7 @@ class CRMPrototype:
             filters.addWidget(
                 self._button(
                     label,
-                    lambda text=label: window.statusBar().showMessage(
+                    lambda _checked=False, text=label: window.statusBar().showMessage(
                         f"{text} filter is a placeholder.", 4000
                     ),
                 )
